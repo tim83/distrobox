@@ -22,12 +22,14 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        image_name: ["fedora", "tumbleweed"]
+        image_name: ["fedora", "tumbleweed", "arch"]
         include:
           - image_name: "fedora"
             container_file: ./fedora.Containerfile
           - image_name: "tumbleweed"
             container_file: ./tumbleweed.Containerfile
+          - image_name: "arch"
+            container_file: ./arch.Containerfile
     steps: 
       - name: Checkout Push to Registry action
         uses: actions/checkout@v3
