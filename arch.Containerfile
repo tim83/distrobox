@@ -2,7 +2,7 @@ FROM docker.io/library/archlinux:latest
 
 RUN pacman -Syy
 
-RUN pacman -S --noconfirm git vim bat borgbackup glances wol fd python-pre-commit poetry trash-cli man
+RUN pacman -S --noconfirm git vim bat borgbackup glances wol fd python-pre-commit poetry trash-cli man plantuml
 
 RUN pacman -Sy --noconfirm base-devel git go
 RUN useradd -m builduser
