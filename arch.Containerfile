@@ -2,7 +2,7 @@ FROM docker.io/library/archlinux:latest
 
 RUN pacman -Syy
 
-RUN pacman -S --noconfirm git vim bat borgbackup glances wol fd man python-pipx fzf speedtest-cli
+RUN pacman -S --noconfirm git vim bat borgbackup glances wol fd man python-pipx fzf speedtest-cli iputils mosh
 
 RUN pacman -Sy --noconfirm base-devel git go
 RUN useradd -m builduser
