@@ -1,6 +1,6 @@
 FROM docker.io/library/debian:stable
 
 RUN apt-get update
-RUN apt-get install -y git vim bat borgbackup wakeonlan fd-find man python3-pip fzf python3-argcomplete speedtest-cli iputils mosh
+RUN apt-get install -y git vim bat borgbackup wakeonlan fd-find man python3-pip fzf python3-argcomplete speedtest-cli iputils-ping mosh
 
 RUN apt-get clean
