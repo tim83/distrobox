@@ -34,7 +34,7 @@ jobs:
             container_file: ./debian.Containerfile
     steps: 
       - name: Checkout Push to Registry action
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Generate tags
         id: generate-tags
